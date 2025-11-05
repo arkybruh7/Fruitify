@@ -7,4 +7,6 @@ This project is underdevelopment cause i took a month break after coding the mai
 
 ---
 
+[Click Here To see](https://www.rahulshrestha7.com.np/Fruitify/)
+
 
