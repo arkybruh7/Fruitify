@@ -1,0 +1,221 @@
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: #E9DCF5;
+    background: radial-gradient(circle, rgba(233, 220, 245, 1) 0%, rgba(173, 165, 254, 1) 100%);
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin:0%
+}
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 6%;
+    right: 83%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    filter: drop-shadow(3px  -3px  3px  rgb(152, 140, 172) );
+}
+.stroke-box, .text-box{
+    display: flex;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    overflow-X: hidden;
+
+}
+.stroke-box{
+    z-index: 3;
+    pointer-events: none;
+}
+.stroke, .text{
+    font-family: 'Bebas Neue';
+    font-size: 90px;
+    -webkit-text-stroke: 2px  rgb(255, 255, 255);
+    letter-spacing: 2px;
+    margin: 0px;
+}
+.text{
+    color: white;
+
+}
+.stroke{
+    visibility: hidden;
+    color: transparent;
+}
+.select , .effect{
+    position:relative;
+    transition: color 0.4s ease;
+    cursor: pointer;
+}
+
+.effect:hover{
+    color: transparent;
+}
+.image{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    z-index: 2;
+    pointer-events: none;
+    filter: drop-shadow(3px -3px 3px #8170C2);
+}
+
+.section-1{
+    position: relative;
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+}
+.decoration{
+    position: absolute;
+    width: 200px;
+    opacity: 0.5;
+    z-index: 0;
+    animation: spin 100s infinite;
+    pointer-events: none;
+}
+.decoration:nth-of-type(2){
+top: 7%;
+left: 14%;
+}
+.decoration:nth-of-type(3){
+top: 35%;
+left: 65%;
+}
+
+.decoration:nth-of-type(4){
+top: 63%;
+left: 11%;
+}
+button {
+top: 7%;
+left: 90%;
+transform: translate(-50%,-50%);
+ padding: 7px 20px;
+ border: unset;
+ border-radius: 15px;
+ color: white;
+ z-index: 1;
+ background: transparent;
+ position: sticky;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+ border: 3px solid white;
+ cursor: pointer;
+}
+
+button::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 12px;
+ background-color: #ffffff;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+button:hover {
+ color: #8170C2;
+ border: 3px solid #E9DCF5;
+}
+
+button:hover::before {
+ width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  background:
+    conic-gradient(from -296deg at 100% 59%, #aa79d5 0 133deg, #fff0 0 100%) 50%/198px
+      168px,
+    conic-gradient(from -296deg at 85% 67%, #4c2b87 0 134.5deg, #fff0 0 100%)
+      50%/198px 168px,
+    conic-gradient(from -296deg at 68% 77%, #aa79d5 0 137deg, #fff0 0 100%) 50%/198px
+      168px,
+    conic-gradient(from -296deg at 55% 85%, #4c2b87 0 150deg, #fff0 0 100%) 50%/198px
+      168px,
+    conic-gradient(from -248deg at 38% 77%, #aa79d5 0 97deg, #fff0 0 100%) 50%/198px
+      168px,
+    conic-gradient(from -248deg at 15% 66%, #4c2b87 0 95deg, #fff0 0 100%) 50%/198px
+      168px,
+    conic-gradient(
+        from 207deg at 15% 66%,
+        #aa79d5 0 84deg,
+        #cfa5f1 0 138deg,
+        #fff0 0 100%
+      )
+      50%/198px 168px,
+    conic-gradient(
+        from 23deg at 85% 12%,
+        #aa79d5 0 34deg,
+        #cfa5f1 0 136deg,
+        #fff0 0 100%
+      )
+      50%/198px 168px,
+    conic-gradient(
+        from 22deg at 66% 27%,
+        #4c2b87 0 34deg,
+        #673ab7 0 128deg,
+        #fff0 0 100%
+      )
+      50%/198px 168px,
+    conic-gradient(
+        from 17deg at 50% 40%,
+        #aa79d5 0 39deg,
+        #cfa5f1 0 133deg,
+        #fff0 0 100%
+      )
+      50%/198px 168px,
+    conic-gradient(
+        from 31deg at 33% 26%,
+        #4c2b87 0 94deg,
+        #673ab7 0 125deg,
+        #fff0 0 100%
+      )
+      50%/198px 168px,
+    conic-gradient(
+        from -57deg at 19% 15%,
+        #4c2b87 0 90deg,
+        #aa79d5 0 181deg,
+        #cfa5f1 0 217deg,
+        #673ab7 0 360deg,
+        #fff0 0 100%
+      )
+      50%/198px 168px;
+}
+
+@keyframes spin{
+0%{transform: rotate(0deg);}
+100%{transform: rotate(360deg);}
+}
+
